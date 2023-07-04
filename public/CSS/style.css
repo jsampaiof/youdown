@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Militta';
+    src: url('../fonts/militta-font/Militta-BW8aG.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --primary-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --second-font: Militta, sans-serif;
+    --primary-font-size: 2em;
+    --primary-color: #2B2D42;
+    --secondary-color: #8D99AE;
+    --third-color: #EDF2F4;
+    --fourth-color: #EF233C;
+    --fifth-color: #D90429;
+}
+
+body{
+    position: relative;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    font-family: var(--second-font);
+}
+
+.service-logo{
+    display: contents;
+}
+
+.service-logo img{
+    width: 7%;
+    margin-right: 20px;
+}
+
+.service-name{
+    color: var(--primary-color);
+}
+
+.container1{
+    padding: 20px;
+    background-color: var(--third-color);
+}
+
+.our-goal{
+    margin: 15px;
+    text-align: center;
+}
