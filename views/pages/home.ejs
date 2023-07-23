@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
+    <script type="module" src="Scripts/LinkAnalization.js" defer></script>
     <title><%= title %></title>
 </head>
 <body>
@@ -25,10 +26,10 @@
             </div>
             <div class="link-area">
                 <form>
-                    <input type="text" name="link" placeholder="https://www.youtube.com/watch?v=kzIpMCoCPNI">
+                    <input id="ytlink" type="text" name="link" placeholder="https://www.youtube.com/watch?v=kzIpMCoCPNI">
                 </form>
                 <figure>
-                    <img src="images/arrow.svg" alt="" srcset="">
+                    <img id="image-button" src="images/arrow.svg" alt="arrow">
                 </figure>
             </div>
             <div class="select-format"></div>

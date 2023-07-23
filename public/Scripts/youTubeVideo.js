@@ -1,8 +1,13 @@
 'use strict';
 
-import { videoInfo } from "./APIservice.js";
+import { APIService } from "./APIservice.js";
 
-async function filter(){
+export class videoFilter extends APIService{
+  constructor(){
+    super()
+  }
+
+  async filter(){
     const video = await videoInfo();
     let videoFiltered = video.filter((quality) => {
       return quality.mimeType === 'video/mp4' || quality.qualityLabel > '144p';
@@ -11,5 +16,4 @@ async function filter(){
     })
     console.log(videoFiltered);
   }
-  
-  filter()
+}
