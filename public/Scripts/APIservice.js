@@ -22,7 +22,6 @@ export class APIService{
     const response = await fetch(url, options);
     const json = await response.json();
 
-    // console.log(json);
     return json.formats;
   };
 }

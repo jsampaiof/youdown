@@ -10,10 +10,23 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Help';
+    src: url('../fonts/help-alex-font/HelpAlex-MVPAx.ttf') format('truetype');
+    src: url('../fonts/help-alex-font/HelpAlex-rg6v9.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root{
     --primary-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     --second-font: Militta, sans-serif;
-    --primary-font-size: 2em;
+    --third-font: Help, sans-serif;
+    --primary-font-size: 1em;
+    --primary-half-font-size: 1.5em;
+    --second-font-size: 2em;
+    --second-half-font-size: 2.5em;
+    --third-font-size: 3em;
     --primary-color: #2B2D42;
     --secondary-color: #8D99AE;
     --third-color: #EDF2F4;
@@ -21,9 +34,9 @@
     --fifth-color: #D90429;
 }
 
-body{
+/* body{
     position: relative;
-}
+} */
 
 header{
     display: flex;
@@ -39,7 +52,7 @@ header{
 }
 
 .service-logo img{
-    width: 7%;
+    width: 60px;
     margin-right: 20px;
 }
 
@@ -49,10 +62,87 @@ header{
 
 .container1{
     padding: 20px;
+    /* DESIGN */
     background-color: var(--third-color);
 }
 
 .our-goal{
     margin: 15px;
+    /* DESIGN */
     text-align: center;
+    font-family: var(--third-font);
+    font-size: var(--second-font-size);
+    color: var(--primary-color);
+}
+
+.our-goal h1{
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.our-goal p{
+    margin-bottom: 40px;
+}
+
+.link-area{
+    /* RESPONSIBILITY */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 470px;
+    margin: auto;
+    /* DESIGN */
+    border: 1px solid #2B2D42;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.link-area figure{
+    display: contents;
+}
+
+#ytlink{
+    width: 355px;
+    /* DESIGN */
+    border: unset;
+    font-size: var(--primary-font-size);
+    font-family: var(--third-font);
+}
+
+#ytlink:focus{
+    outline: none;
+}
+
+#image-button{
+    width: 50px;
+}
+
+.select-format{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    /* DESIGN */
+    font-family: var(--third-font);
+    color: var(--primary-color);
+    font-size: 15px;
+}
+
+.select-format p{
+    margin-right: 10px;
+    /* DESIGN */
+    font-size: var(--primary-half-font-size );
+}
+
+.select-format select{
+    width: 80px;
+    border-radius: 30px;
+    text-align: center;
+    /* DESIGN */
+    font-size: var(--primary-font-size);
+    font-family: var(--third-font);
+    background-color: #fff;
+}
+
+.select-format select:focus{
+    outline: none;
 }
