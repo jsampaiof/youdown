@@ -34,9 +34,7 @@
     --fifth-color: #D90429;
 }
 
-/* body{
-    position: relative;
-} */
+/* HEADER */
 
 header{
     display: flex;
@@ -59,6 +57,8 @@ header{
 .service-name{
     color: var(--primary-color);
 }
+
+/* CONTAINER 1 */
 
 .container1{
     padding: 20px;
@@ -145,4 +145,14 @@ header{
 
 .select-format select:focus{
     outline: none;
+}
+
+/* CONTAINER 2 */
+
+.download-icon{
+    display: contents;
+}
+
+.download-icon img{
+    width: 100px;
 }
