@@ -1,0 +1,15 @@
+#image-button:hover{
+    transition: transform 0.2s ease-in-out;
+    transform: scale(0.7);
+    cursor: pointer;
+}
+
+.download div:hover{
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.stickers{
+    pointer-events: none;
+}
