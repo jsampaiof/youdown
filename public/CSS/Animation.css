@@ -1,4 +1,4 @@
-#image-button:hover{
+#image-button:hover, .instagram:hover, .facebook:hover, .twitter:hover, .linkedin:hover, .github:hover, .whatsapp:hover{
     transition: transform 0.2s ease-in-out;
     transform: scale(0.7);
     cursor: pointer;
