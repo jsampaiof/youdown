@@ -1,7 +1,6 @@
 'use strict';
 
-import {APIService} from './APIservice.js';
-import { videoFilter } from './youTubeVideo.js';
+import { videoFilter } from './VideoInfo.js';
 import { selection } from './FormatAndQuality.js';
 
 const link = document.querySelector('#ytlink');
@@ -17,14 +16,14 @@ linkButton.addEventListener('click', async function(){
     const url = link.value;
     if(url){
         const lastEleven = url.slice(-11);
-        const newVideo = new APIService(lastEleven);
-        const info = await newVideo.videoInfo();
+        const response = await fetch(`/api?link=${lastEleven}`)
+        const info = await response.json();
         const filter = videoFilter.filter(info);
         selection.formatAndQuality(filter, selector);
+        quality = selector.options[selector.selectedIndex].text;
     }else{
         window.alert('Link não encontrado!')
     };
-    quality = selector.options[selector.selectedIndex].text;
 });
 
 selector.addEventListener('change', function(event){

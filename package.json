@@ -2,9 +2,13 @@
   "name": "youdown",
   "version": "1.0.0",
   "description": "An YouTube video downloader service",
-  "main": "youTubeVideo.js",
+  "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
+    "start": "index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
